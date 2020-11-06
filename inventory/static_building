@@ -1,0 +1,10 @@
+[building_1]
+r[1:2].ingrando.lab
+s1.ingrando.lab
+
+[building_2]
+r3.ingrando.lab
+
+[building_3]
+r[4:5].ingrando.lab
+s2.ingrando.lab
