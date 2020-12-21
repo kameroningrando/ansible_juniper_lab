@@ -1,0 +1,23 @@
+---
+- name: "Gather Information"
+# Use the -e option to specify the hostnames # -e "host=all" or 
+# -e "host=building_1", etc...
+  hosts: "{{ host }}"
+  roles:
+    - Juniper.junos
+  connection: local
+  gather_facts: no
+  vars_files:
+    - ./secrets/vault-vars.yml
+  tasks:
+  - name: Create backup dir
+    file:
+      path: "./outputs/backups/{{ inventory_hostname }}"
+      state: directory
+      recurse: yes
+  - name: Backup switch (JunOS)
+    junos_config:
+      backup: yes
+      backup_options:
+        dir_path: "./outputs/backups/{{ inventory_hostname }}"
+        provider: "{{ user_credentials }}"

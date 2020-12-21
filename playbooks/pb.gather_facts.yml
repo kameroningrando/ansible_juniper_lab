@@ -1,0 +1,19 @@
+---
+- name: Grab facts from devices
+# Use the -e option to specify the hostnames # -e "host=all" or 
+# -e "host=building_1", etc...
+  hosts: "{{ host }}"
+  connection: local
+  roles:
+    - juniper.junos
+  gather_facts: no
+  vars_files:
+    - ./secrets/vault-vars.yml   
+  tasks:
+    - name: Grab facts
+      juniper_junos_facts:
+        provider: "{{ user_credentials }}"
+      register: result
+    - name: Print to stdout
+      debug:
+        var: result
