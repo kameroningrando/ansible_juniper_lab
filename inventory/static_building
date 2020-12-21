@@ -1,10 +1,10 @@
 [building_1]
-r[1:2].ingrando.lab
-s1.ingrando.lab
+r[1:2]
+s1
 
 [building_2]
-r3.ingrando.lab
+r3
 
 [building_3]
-r[4:5].ingrando.lab
-s2.ingrando.lab
+r[4:5]
+s2
