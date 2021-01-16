@@ -1,1 +1,3 @@
-# ansible_juniper_lab
+# Ansible - Juniper Environment
+
+Contains various playbooks for Juniper environments.
