@@ -1,18 +1,23 @@
 ---
 - name: Grab facts from devices
-# Use the -e option to specify the hostnames # -e "host=all" or 
-# -e "host=building_1", etc...
   hosts: "{{ host }}"
-  connection: local
-  roles:
-    - juniper.junos
   gather_facts: no
-  vars_files:
-    - ./secrets/vault-vars.yml   
+
+  vars_prompt:
+    - name: "host"
+      prompt: "Enter hostname, building, room, or device type"
+      private: no
+    - name: "ansible_user"
+      prompt: "Enter username"
+      private: no
+    - name: "ansible_password"
+      prompt: "Enter password"
+      private: yes
+
   tasks:
     - name: Grab facts
-      juniper_junos_facts:
-        provider: "{{ user_credentials }}"
+      junipernetworks.junos.junos_facts:
+
       register: result
     - name: Print to stdout
       debug:
