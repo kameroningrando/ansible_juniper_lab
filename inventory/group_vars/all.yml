@@ -1,6 +1,4 @@
 ---
 ansible_connection: ansible.netcommon.netconf
 ansible_network_os: junipernetworks.junos.junos
-ansible_user: juniper
-ansible_password: juniper1234
 ansible_port: 22
