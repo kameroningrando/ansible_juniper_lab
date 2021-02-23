@@ -1,10 +1,9 @@
 [building_1]
-r[1:2]
-s1
+core-qfx-1.ingrando.lab
+dist-qfx-1.ingrando.lab
+access-qfx-1.ingrando.lab
 
 [building_2]
-r3
-
-[building_3]
-r[4:5]
-s2
+core-qfx-2.ingrando.lab
+dist-qfx-2.ingrando.lab
+access-qfx-2.ingrando.lab

@@ -1,16 +1,17 @@
 [b1r1]
-r1
-s1
+core-qfx-1.ingrando.lab
 
 [b1r2]
-r2
+dist-qfx-1.ingrando.lab
+
+[b1r3]
+access-qfx-1.ingrando.lab
 
 [b2r1]
-r3
+core-qfx-1.ingrando.lab
 
-[b3r1]
-r4
+[b2r2]
+dist-qfx-1.ingrando.lab
 
-[b3r2]
-r5
-s2
+[b2r3]
+access-qfx-1.ingrando.lab

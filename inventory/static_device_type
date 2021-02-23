@@ -1,5 +1,9 @@
-[vmx]
-r[1:5]
+[vqfx1]
+core-qfx-1.ingrando.lab
+dist-qfx-1.ingrando.lab
+access-qfx-1.ingrando.lab
 
-[vqfx]
-s[1:2]
+[vqfx2]
+core-qfx-2.ingrando.lab
+dist-qfx-2.ingrando.lab
+access-qfx-2.ingrando.lab
