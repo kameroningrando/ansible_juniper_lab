@@ -9,9 +9,6 @@ verify_ssl = true
 ansible = "*"
 paramiko = "*"
 ncclient = "*"
-dnspython = "*"
-xmltodict = "*"
-junos-eznc = "*"
 
 [requires]
 python_version = "3.8"
